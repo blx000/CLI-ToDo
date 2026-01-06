@@ -1,8 +1,9 @@
 from __future__ import annotations
 
-from todo.application.errors import TaskNotFound
-from todo.application.ports import TaskRepository
-from todo.domain.entities import Task, TaskStatus
+from .errors import TaskNotFound
+from .ports import TaskRepository
+from ..domain.entities import Task, TaskStatus
+
 
 
 def add_task(repo: TaskRepository, title: str) -> Task:

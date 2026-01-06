@@ -4,7 +4,7 @@ import json
 from dataclasses import asdict
 from pathlib import Path
 
-from todo.domain.entities import Task, TaskStatus
+from ..domain.entities import Task, TaskStatus
 
 
 class JsonTaskRepository:

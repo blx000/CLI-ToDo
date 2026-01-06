@@ -4,7 +4,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from enum import Enum
 
-from todo.domain.errors import InvalidTaskTitle
+from .errors import InvalidTaskTitle
 
 
 class TaskStatus(str, Enum):
