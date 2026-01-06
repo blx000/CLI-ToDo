@@ -9,7 +9,6 @@ from ..domain.entities import TaskStatus
 from ..infrastructure.json_repo import JsonTaskRepository
 
 
-
 def _repo() -> JsonTaskRepository:
     return JsonTaskRepository(Path("data") / "tasks.json")
 
