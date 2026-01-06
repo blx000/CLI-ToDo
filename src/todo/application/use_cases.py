@@ -1,9 +1,8 @@
 from __future__ import annotations
 
+from ..domain.entities import Task, TaskStatus
 from .errors import TaskNotFound
 from .ports import TaskRepository
-from ..domain.entities import Task, TaskStatus
-
 
 
 def add_task(repo: TaskRepository, title: str) -> Task:
