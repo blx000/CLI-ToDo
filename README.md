@@ -32,11 +32,6 @@ CLI ToDo - консольное CRUD-приложение для управле�
 
 ---
 
-## Требования
-
-- Python 3.13+
-
----
 
 ## Установка
 
@@ -44,7 +39,7 @@ CLI ToDo - консольное CRUD-приложение для управле�
 git clone https://github.com/blx000/CLI-ToDo.git
 cd CLI-ToDo
 
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 ````
 
@@ -52,10 +47,10 @@ source .venv/bin/activate
 
 ## Использование
 
-Приложение запускается как Python-модуль:
+Проект использует src-layout, поэтому CLI запускается через модуль src.todo:
 
 ```bash
-python -m todo <command> [arguments]
+python -m src.todo <command> [arguments]
 ```
 
 ---
@@ -65,7 +60,7 @@ python -m todo <command> [arguments]
 ### Добавить задачу
 
 ```bash
-python -m todo add "Buy milk"
+python -m src.todo add "Buy milk"
 ```
 
 ---
@@ -73,7 +68,7 @@ python -m todo add "Buy milk"
 ### Показать все задачи
 
 ```bash
-python -m todo list
+python -m src.todo list
 ```
 
 ---
@@ -83,13 +78,13 @@ python -m todo list
 Невыполненные:
 
 ```bash
-python -m todo list --status todo
+python -m src.todo list --status todo
 ```
 
 Выполненные:
 
 ```bash
-python -m todo list --status done
+python -m src.todo list --status done
 ```
 
 ---
@@ -97,13 +92,13 @@ python -m todo list --status done
 ### Отметить задачу выполненной
 
 ```bash
-python -m todo done <task_id>
+python -m src.todo done <task_id>
 ```
 
 Пример:
 
 ```bash
-python -m todo done 1
+python -m src.todo done 1
 ```
 
 ---
@@ -111,13 +106,13 @@ python -m todo done 1
 ### Удалить задачу
 
 ```bash
-python -m todo delete <task_id>
+python -m src.todo delete <task_id>
 ```
 
 Пример:
 
 ```bash
-python -m todo delete 1
+python -m src.todo delete 1
 ```
 
 ---
